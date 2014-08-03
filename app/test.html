@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <script src='../node_modules/closure-library/closure/goog/base.js'></script>
+    <script src='deps.js'></script>
+    <script src="config.js"></script>
+    <script src="../bower_components/requirejs/require.js"></script>
+    
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script>
+    goog.require('app.test.Runner');
+    require(['mocha','chai','underscore'],function(mocha,chai){
+      window.chai = chai;
+      var testRunner = app.test.Runner.getInstance();
+      testRunner.run();
+    });
+    </script>
+  </body>
+</html>

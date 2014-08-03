@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <script src='../node_modules/closure-library/closure/goog/base.js'></script>
+    <script src='deps.js'></script>
+    
+    <script src="config.js"></script>
+    <script src="../bower_components/requirejs/require.js"></script>
+    <script>
+      goog.require('app.Application');
+    </script>
+    
+    <script>
+    require([
+      'jquery',
+      'bootstrap',
+      'angular'
+    ],function(){
+      var applicationInstance = app.Application.getInstance();
+      applicationInstance.run();
+    });
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "my-media",
+  "version": "0.0.0",
+  "description": "my media",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "closure-library": "^1.43629075.2",
+    "grunt": "^0.4.5",
+    "grunt-closure-tools": "^0.9.7",
+    "grunt-contrib-jshint": "^0.10.0",
+    "load-grunt-tasks": "^0.6.0",
+    "mocha": "^1.21.0"
+  }
+}
